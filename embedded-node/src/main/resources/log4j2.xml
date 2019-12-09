@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Appenders>
+        <Console name="STDOUT" target="SYSTEM_OUT">
+            <PatternLayout>
+                <!--
+                <pattern>%d{HH:mm:ss.SSS} [%t]  %-5level [%-20c{1}]     %-4L - %msg %n</pattern>
+                -->
+                <pattern>%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} %L - %msg %n</pattern>
+            </PatternLayout>
+        </Console>
+        <rollingFile name="RFA"
+                     fileName="logs/embedded-node.log"
+                     filePattern="logs/embedded-node-%d{MM-dd-yyyy}-%i.log"
+                     immediateFlush="true"
+        >
+            <PatternLayout>
+                <pattern>%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} %L - %msg %n</pattern>
+            </PatternLayout>
+            <Policies>
+                <OnStartupTriggeringPolicy/>
+                <SizeBasedTriggeringPolicy size="5MB"/>
+                <TimeBasedTriggeringPolicy/>
+            </Policies>
+        </rollingFile>
+    </Appenders>
+    <loggers>
+        <root level="warn">
+            <appender-ref ref="STDOUT"/>
+            <appender-ref ref="RFA"   />
+        </root>
+        <logger name="bitronix.tm"                         level="info"  />
+        <logger name="ro.home"                             level="info"  />
+        <logger name="org.springframework"                 level="info"  />
+    </loggers>
+</Configuration>

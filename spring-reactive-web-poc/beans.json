@@ -1,0 +1,134 @@
+{
+  "org.springframework.context.annotation.ConfigurationClassPostProcessor": [
+    "org.springframework.context.annotation.internalConfigurationAnnotationProcessor"
+  ],
+  "org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor": [
+    "org.springframework.context.annotation.internalAutowiredAnnotationProcessor"
+  ],
+  "org.springframework.context.event.EventListenerMethodProcessor": [
+    "org.springframework.context.event.internalEventListenerProcessor"
+  ],
+  "org.springframework.context.event.DefaultEventListenerFactory": [
+    "org.springframework.context.event.internalEventListenerFactory"
+  ],
+  "ro.home.config.AppConfig$$EnhancerBySpringCGLIB$$9a130b9b": [
+    "appConfig"
+  ],
+  "ro.home.resources.SpringBeanResource": [
+    "springBeanResource"
+  ],
+  "ro.home.config.SecurityConfig$$EnhancerBySpringCGLIB$$6b18e436": [
+    "securityConfig"
+  ],
+  "ro.home.providers.GlobalExceptionHandler": [
+    "globalExceptionHandler"
+  ],
+  "ro.home.providers.logging.ExchangeLoggingFilter": [
+    "exchangeLoggingFilter"
+  ],
+  "ro.home.resources.FaviconController": [
+    "faviconController"
+  ],
+  "ro.home.resources.UserResource": [
+    "userResource"
+  ],
+  "org.springframework.security.config.annotation.web.reactive.ServerHttpSecurityConfiguration": [
+    "org.springframework.security.config.annotation.web.reactive.ServerHttpSecurityConfiguration"
+  ],
+  "org.springframework.security.config.annotation.web.reactive.ServerHttpSecurityConfiguration$1": [
+    "authenticationPrincipalArgumentResolverConfigurer"
+  ],
+  "org.springframework.security.web.reactive.result.method.annotation.AuthenticationPrincipalArgumentResolver": [
+    "authenticationPrincipalArgumentResolver"
+  ],
+  "org.springframework.security.web.reactive.result.method.annotation.CurrentSecurityContextArgumentResolver": [
+    "reactiveCurrentSecurityContextArgumentResolver"
+  ],
+  "org.springframework.security.config.annotation.web.reactive.ServerHttpSecurityConfiguration$ContextAwareServerHttpSecurity": [
+    "org.springframework.security.config.annotation.web.reactive.HttpSecurityConfiguration.httpSecurity"
+  ],
+  "org.springframework.security.config.annotation.web.reactive.WebFluxSecurityConfiguration": [
+    "org.springframework.security.config.annotation.web.reactive.WebFluxSecurityConfiguration"
+  ],
+  "org.springframework.security.web.server.WebFilterChainProxy": [
+    "org.springframework.security.config.annotation.web.reactive.WebFluxSecurityConfiguration.WebFilterChainFilter"
+  ],
+  "org.springframework.security.web.reactive.result.view.CsrfRequestDataValueProcessor": [
+    "requestDataValueProcessor"
+  ],
+  "org.springframework.security.config.crypto.RsaKeyConversionServicePostProcessor": [
+    "conversionServicePostProcessor"
+  ],
+  "org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder": [
+    "passwordEncoder"
+  ],
+  "org.springframework.security.web.server.MatcherSecurityWebFilterChain": [
+    "securitygWebFilterChain"
+  ],
+  "org.springframework.security.core.userdetails.MapReactiveUserDetailsService": [
+    "userDetailsService"
+  ],
+  "org.springframework.web.reactive.config.DelegatingWebFluxConfiguration": [
+    "org.springframework.web.reactive.config.DelegatingWebFluxConfiguration"
+  ],
+  "org.springframework.web.reactive.DispatcherHandler": [
+    "webHandler"
+  ],
+  "org.springframework.web.reactive.handler.WebFluxResponseStatusExceptionHandler": [
+    "responseStatusExceptionHandler"
+  ],
+  "org.springframework.web.reactive.result.method.annotation.RequestMappingHandlerMapping": [
+    "requestMappingHandlerMapping"
+  ],
+  "org.springframework.web.reactive.accept.RequestedContentTypeResolverBuilder$$Lambda$209/0x0000000800376440": [
+    "webFluxContentTypeResolver"
+  ],
+  "org.springframework.web.reactive.function.server.support.RouterFunctionMapping": [
+    "routerFunctionMapping"
+  ],
+  "org.springframework.web.reactive.config.WebFluxConfigurationSupport$EmptyHandlerMapping": [
+    "resourceHandlerMapping"
+  ],
+  "org.springframework.web.reactive.resource.ResourceUrlProvider": [
+    "resourceUrlProvider"
+  ],
+  "org.springframework.web.reactive.result.method.annotation.RequestMappingHandlerAdapter": [
+    "requestMappingHandlerAdapter"
+  ],
+  "org.springframework.http.codec.support.DefaultServerCodecConfigurer": [
+    "serverCodecConfigurer"
+  ],
+  "org.springframework.web.server.i18n.AcceptHeaderLocaleContextResolver": [
+    "localeContextResolver"
+  ],
+  "org.springframework.format.support.DefaultFormattingConversionService": [
+    "webFluxConversionService"
+  ],
+  "org.springframework.core.ReactiveAdapterRegistry": [
+    "webFluxAdapterRegistry"
+  ],
+  "org.springframework.web.reactive.config.WebFluxConfigurationSupport$NoOpValidator": [
+    "webFluxValidator"
+  ],
+  "org.springframework.web.reactive.function.server.support.HandlerFunctionAdapter": [
+    "handlerFunctionAdapter"
+  ],
+  "org.springframework.web.reactive.result.SimpleHandlerAdapter": [
+    "simpleHandlerAdapter"
+  ],
+  "org.springframework.web.reactive.result.method.annotation.ResponseEntityResultHandler": [
+    "responseEntityResultHandler"
+  ],
+  "org.springframework.web.reactive.result.method.annotation.ResponseBodyResultHandler": [
+    "responseBodyResultHandler"
+  ],
+  "org.springframework.web.reactive.result.view.ViewResolutionResultHandler": [
+    "viewResolutionResultHandler"
+  ],
+  "org.springframework.web.reactive.function.server.support.ServerResponseResultHandler": [
+    "serverResponseResultHandler"
+  ],
+  "com.fasterxml.jackson.databind.ObjectMapper": [
+    "objectMapper"
+  ]
+}

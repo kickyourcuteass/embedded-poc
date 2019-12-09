@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Appenders>
+        <Console name="STDOUT" target="SYSTEM_OUT">
+            <PatternLayout>
+                <pattern>%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} %L - %msg %n</pattern>
+            </PatternLayout>
+        </Console>
+        <rollingFile name="RFA"
+                     fileName="logs/spring-reactive-web-poc.log"
+                     filePattern="logs/spring-reactive-web-poc-%d{MM-dd-yyyy}-%i.log"
+                     immediateFlush="true"
+        >
+            <PatternLayout>
+                <pattern>%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} %L - %msg %n</pattern>
+            </PatternLayout>
+            <Policies>
+                <OnStartupTriggeringPolicy/>
+                <SizeBasedTriggeringPolicy size="5MB"/>
+                <TimeBasedTriggeringPolicy/>
+            </Policies>
+        </rollingFile>
+    </Appenders>
+    <loggers>
+        <root level="warn">
+            <appender-ref ref="STDOUT"/>
+            <appender-ref ref="RFA"   />
+        </root>
+        <logger name="org.springframework"                                  level="info"   />
+
+
+        <logger name="ro.home"                                              level="info"   />
+        <logger name="ro.home.providers"                                    level="debug"  />
+    </loggers>
+</Configuration>
